@@ -1,0 +1,157 @@
+body,
+html {
+  height: 100%;
+}
+.container-fluid {
+  background-image: url('../images/pexels.jpeg');
+  height: 100%;
+}
+
+#name1 {
+  background-color: black;
+  min-height: 350px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: left;
+  border: 3px solid rgb(113, 174, 209);
+}
+#name2 {
+  background-color: black;
+  min-height: 350px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: right;
+  border: 3px solid rgb(113, 174, 209);
+}
+
+#result {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 100px;
+  margin-bottom: 85px;
+  background-color: black;
+  border: 3px solid rgb(113, 174, 209);
+}
+
+.choices1,
+.choices2 {
+  visibility: hidden;
+}
+.chatdiv {
+  background-color: black;
+  height: 450px;
+  z-index: 2;
+  margin-top: -400px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 10px solid rgba(113, 174, 209);
+}
+.chat {
+  overflow: scroll;
+  height: 380px;
+}
+.sendMessage {
+  margin-top: 10px;
+}
+.rose {
+  color: rgb(113, 174, 209);
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 15px;
+}
+.green {
+  color: #87ccc3bb;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 15px;
+}
+.MessageText {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 18px;
+}
+#addName,
+#newMessage {
+  border-radius: 4px;
+  width: 30%;
+  height: 30px;
+  color: rgb(113, 174, 209);
+  border: 3px solid rgb(113, 174, 209);
+  background-color: black;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 15px;
+}
+#playerName,
+.message {
+  width: 60%;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 1rem;
+  background-color: black;
+  border: 3px solid rgb(113, 174, 209);
+  color: rgb(113, 174, 209);
+}
+
+.turn {
+  text-align: center;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 1.5rem;
+  background-color: black;
+  color: rgb(113, 174, 209);
+  border: 3px solid rgb(113, 174, 209);
+}
+
+#playerId {
+  text-align: center;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 2rem;
+  background-color: rgb(255, 255, 255);
+  color: rgb(113, 174, 209);
+}
+h3,
+#result {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(113, 174, 209);
+}
+#result {
+  text-align: center;
+}
+p {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 1.5rem;
+  color: gray;
+}
+.entry_val {
+  text-align: center;
+  font-size: 1rem;
+}
+.title {
+  font-family: 'Bungee Inline', cursive;
+  color: rgb(113, 174, 209);
+  font-size: 3rem;
+  text-align: center;
+  line-height: 0.9;
+}
+.fas {
+  font-size: 4rem;
+  padding-right: 15px;
+  color: #87ccc3bb;
+  margin-top: 15px;
+}
+.fas:hover {
+  color: rgb(113, 174, 209);
+}
+@media screen and (max-width: 640px) {
+  #result {
+    margin-bottom: 20px;
+  }
+  .chatdiv {
+    z-index: 1;
+    margin-top: 15px;
+  }
+  #name1,
+  #name2 {
+    margin-top: 15px;
+    min-height: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .chatdiv {
+    margin-top: 40px;
+  }
+}

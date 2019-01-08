@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Rock Paper Scissors game</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Bungee+Inline" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+      crossorigin="anonymous"
+    />
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row header">
+        <div class="col-md-1"></div>
+        <div class="col-md-3 mt-3 col-6">
+          <div id="playerId" class="mb-3"></div>
+          <p class="turn">Welcome To The Game</p>
+        </div>
+        <div id="result" class="col-md-4 mt-3 col-5"></div>
+
+        <div class="col-md-4 col-12">
+          <p class="title">Rock Paper Scissors</p>
+          <form class="entry_val">
+            <input id="playerName" type="text" placeholder="Enter your name" />
+            <input id="addName" type="submit" value="Start" />
+          </form>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-1 col-1"></div>
+        <div id="name1" class="col-md-4 col-12">
+          <h3>Waiting For Player #1</h3>
+          <div class="choices1">
+            <i data="Rock" class="fas fa-hand-rock"></i> <i data="Paper" class="fas fa-hand-paper"></i>
+            <i data="Scissors" class="fas fa-hand-scissors"></i>
+          </div>
+          <p class="your_choice"></p>
+          <p class="W_L"></p>
+        </div>
+        <div class="col-md-2 col-1"></div>
+        <div id="name2" class="col-md-4 col-12">
+          <h3>Waiting For Player #2</h3>
+          <div class="choices2">
+            <i data="Rock" class="fas fa-hand-rock"></i> <i data="Paper" class="fas fa-hand-paper"></i>
+            <i data="Scissors" class="fas fa-hand-scissors"></i>
+          </div>
+          <p class="your_choice"></p>
+          <p class="W_L"></p>
+        </div>
+        <div class="col-md-1 col-1"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="chatdiv col-md-4">
+          <div class="chat"></div>
+          <form class="sendMessage">
+            <input class="message" type="text" /> <button id="newMessage" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
