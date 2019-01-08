@@ -1,4 +1,4 @@
-var winsAnsw = ['RockScissors', 'PaperRock', 'ScissorsPaper'];
+//
 var config = {
   apiKey: 'AIzaSyC0HuhvlBOU0wIhZN-EJ0OyrEctsitiGHI',
   authDomain: 'rockpaperscissors-multip-616d3.firebaseapp.com',
@@ -18,6 +18,7 @@ var wins2 = 0;
 var firstAnsw = '';
 var secondAnsw = '';
 var turn = 0;
+var winsAnsw = ['RockScissors', 'PaperRock', 'ScissorsPaper'];
 
 var connectionsRef = database.ref('/connections');
 
